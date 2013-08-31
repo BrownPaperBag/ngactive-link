@@ -1,4 +1,4 @@
-ngular.module('active-link', []).
+angular.module('active-link', []).
   directive('active', ['$location',
     function(location) {
       return {
