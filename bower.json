@@ -1,0 +1,19 @@
+{
+  "name": "ngactive-link",
+  "version": "0.0.1",
+  "description": "Bower-ified active link directive from this SO answer: http://stackoverflow.com/a/12631074/187954",
+  "main": "directives/ngactive-link.js",
+  "keywords": [
+    "Link",
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/BrownPaperBag/ngactive-link",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
