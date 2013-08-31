@@ -5,12 +5,22 @@ angular.module('active-link', []).
       /**
        * Add or remove the active class.
        *
+       * Active class is added if the final segment of attr.href split by /
+       * matches location.path().
+       *
        * @param {Object} element HTML element
        * @param {Object} attr The element's attributes
        */
       function applyState(element, attr) {
-        var activeLinkClass = attr.active || 'active';
-        if (attr.href === location.path()) {
+        var activeLinkClass = attr.active || 'active',
+          hrefParts = attr.href.split('/'),
+          path = location.path();
+
+        if (path.charAt(0) === '/') {
+          path = path.slice(1);
+        }
+
+        if (hrefParts[hrefParts.length - 1] === path) {
           element.addClass(activeLinkClass);
         } else {
           element.removeClass(activeLinkClass);
