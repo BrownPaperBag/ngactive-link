@@ -1,6 +1,6 @@
 {
   "name": "ngactive-link",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bower-ified active link directive from this SO answer: http://stackoverflow.com/a/12631074/187954",
   "main": "directives/ngactive-link.js",
   "keywords": [
